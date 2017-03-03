@@ -1,0 +1,160 @@
+html {
+    font: 24px/1.5 Palatino, serif;
+}
+
+body {
+    background: #212529;
+    color: #adb5bd;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+}
+
+:link {
+    color: #329af0;
+}
+
+:visited {
+    color: #cc5de8;
+}
+
+header,
+footer {
+    padding: 1rem;
+}
+
+header > h1 {
+    margin: 0;
+}
+
+#app {
+    display: flex;
+    flex-flow: row;
+    flex-grow: 1;
+}
+
+#app > div {
+    display: flex;
+    flex-flow: row;
+    flex-grow: 1;
+}
+
+#app nav {
+    min-width: 5em;
+    max-width: 10em;
+}
+
+nav > ul,
+nav > ul > li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+}
+
+nav a {
+    display: block;
+    padding: .3rem 1rem;
+}
+
+nav a:hover {
+    background: #343a40;
+}
+
+main {
+    display: flex;
+    flex-grow: 1;
+    background: #343a40;
+    overflow-y: auto;
+}
+
+main > section {
+    display: flex;
+    flex-flow: column;
+    flex-grow: 1;
+}
+
+h2 {
+    margin: 0;
+    color: #f1f3f5;
+}
+
+.inbox > header {
+    background: #1862ab;
+}
+
+.drafts > header {
+    background: #0b7285;
+}
+
+.sent > header {
+    background: #2b8a3e;
+}
+
+.spam > header {
+    background: #d9480f;
+}
+
+.trash > header {
+    background: #a61e4d;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: .3rem 1rem;
+    text-align: left;
+}
+
+tbody > tr:nth-child(odd) {
+    background: #495057;
+}
+
+p {
+    padding: .3rem 1rem;
+}
+
+.mail {
+    padding: 1rem;
+    background: #f8f9fa;
+    color: #212529;
+    display: flex;
+    flex-flow: column;
+    flex-grow: 1;
+}
+
+.mail > header {
+    border-bottom: 1px solid #dee2e6;
+    padding: 0 0 1rem;
+    display: flex;
+    flex-flow: column-reverse;
+}
+
+.mail > p {
+    padding: 0;
+}
+
+h3 {
+    margin: 0;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+dt {
+    color: #adb5bd;
+    float: left;
+    width: 5em;
+}
